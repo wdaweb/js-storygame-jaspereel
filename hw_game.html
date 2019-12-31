@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hw_game</title>
+</head>
+<body>
+    <script>  
+        var name=prompt("這是一個蠟筆小新的二分之一小遊戲，請輸入你的名字","挑戰者");   
+        if(name=="null"){
+            alert(`看來你還沒準備好，下在再來吧!`)
+        }
+        else{
+            var yes=confirm(`${name}，你是否要開始進行遊戲了?`);
+        }     
+                  
+        if(yes==true){
+            alert(`${name}，那我們就開始進行遊戲了吧!`) 
+            var q1=confirm(`有一天小新早上睡過頭了，請問是否要繼續賴床下去?`);
+        }
+        else if(yes==false){
+            console.log(yes);
+            alert(`看來你還沒準備好，下在再來吧!`)
+        }
+
+        if(q1==true){
+            alert(`美芽使出轉轉神功大招，讓小新一大早就被GAME OVER`)     
+        }
+        else if(q1==false){
+            alert(`當個乖小孩一下，免得被美芽老太婆打`)
+            var q2=confirm(`每日慣例載小新前往幼稚園的路線，今天卻道路施工需換兩條路的其中一條走，請問美芽是否該猶豫有39度斜但離幼稚園較近的山坡路?`);
+        }
+        if(q2==true){
+            alert(`美芽騎到一半聽到山腳下的超市在大特賣，騎到一半就GAME OVER去搶大拍賣了`)     
+        }
+        else if(q2==false){
+            alert(`美芽怕累於是繞遠路多花15分鐘才讓小新順利到幼稚園了`)
+            var q3=confirm(`小新到幼稚園後看見松坂老師為了聯誼煩惱，此時他是否應該給她一點建議?`);
+        }
+        if(q3==true){
+            alert(`給她一些建議，避免她成為沒人要的老太婆`)  
+            var q4=confirm(`此時妮妮提議以超真實扮家家酒來模擬松坂老師的聯誼情況，大家聽了面有難色，是否應該答應妮妮一起玩?`);   
+        }
+        else if(q3==false){
+            alert(`不給她建議，讓小梅自生自滅GAME OVER就好`)
+        }
+        if(q4==true){
+            alert(`答應妮妮，避免她發火又開始揍兔子玩偶`)  
+            var q5=confirm(`後來吉永老師看見他們在玩超真實扮家家酒，心想就算幫松坂老師模擬會有用嗎?`);   
+        }
+        else if(q4==false){
+            alert(`妮妮發火，拿出她珍藏的兔子玩偶，讓大夥GAME OVER`)
+        }
+        if(q5==true){
+            alert(`拜託，你傻了阿~她是松坂老師欸!她的感情路早就GAME OVER了`)  
+        }
+        else if(q5==false){
+            alert(`當然會阿只是緣分還沒到而已~`)
+        }
+
+    </script>
+
+</body>
+</html>
+
+<!-- <body>
+    <script>
+    function gameplay() {
+        1. prompt:遊戲說明並取得NAME=xxx，回饋訊息顯示;
+        2. confirm:詢問用戶XXX是否要進行遊戲，回饋訊息顯示;
+            - TRUE:
+                if(qus(問題內容,好訊息,壞訊息,T/F)) return;
+                if(qus(問題內容,好訊息,壞訊息,T/F)) return;
+                if(qus(問題內容,好訊息,壞訊息,T/F)) return;
+                if(qus(問題內容,好訊息,壞訊息,T/F)) return;
+                if(qus(問題內容,好訊息,壞訊息,T/F)) return;
+                恭喜成功;
+            - FALSE:
+                不想玩就881;
+    }
+    function qus(問題,好,壞,布林){
+        1. confirm:顯示題目取得TorF==布林
+            - TRUE:顯示好訊息
+            - FALSE:顯示壞訊息 return TRUE;
+    }
+    gameplay();
+    </script>
+    </body> -->
